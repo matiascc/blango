@@ -4,6 +4,7 @@ from django.utils import timezone
 from django.shortcuts import render, get_object_or_404, redirect
 from blog.models import Post
 from blog.forms import CommentForm
+from django.views.decorators.cache import cache_page
 
 logger = logging.getLogger(__name__)
 
